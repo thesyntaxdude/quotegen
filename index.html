@@ -26,18 +26,30 @@
 
     .quote {
       color: blue;
+      font-size: 1.2rem;
+      padding-inline: 0.5em;
+    }
+
+    .addQuoteModal {
+      background-color: #c0beef;
+      padding: 2em;
+      border-radius: 10px;
+      margin-bottom: 1em;
     }
   </style>
 </head>
 
 <body>
   <h1>QuoteGen - Random Quote Generator</h1>
+  <div class="addQuoteModal">
+    <input type="text" id="add-quote-input" placeholder="enter quote here" required>
+    <input id="add-quote" type="submit" value="Add">
+  </div>
   <div class="container">
-    <p class="quote"></p>
+    <p class="quote">Click <code>Random Quote </code>to generate a quote</p>
   </div>
   <div class="buttons">
     <button id="random-quote">Random Quote</button>
-    <button id="add-quote">Add Quote</button>
   </div>
   <script src="app.js"></script>
 </body>
